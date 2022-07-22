@@ -1,0 +1,9 @@
+version: '3'
+#  docler run --rm -it -p 9042:9042 cassandara
+
+services:
+  cassandra_db:
+    build: docker/CassandraSQL
+    container_name: cassandraSql
+    ports:
+      - "9042:9042"

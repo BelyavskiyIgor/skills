@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Hello!</h1>
+<p th:text="${user.getName()}"></p>
+<p th:text="${user.toString()}"></p>
+
+<p th:each="lang : ${user.languageList}">
+    <span th:text="${lang.getTitle}"></span>
+<!--    <span th:text="${user.getName()}"></span>-->
+<!--    <span th:text="${lang.description}"/>-->
+</p>
+</body>
+</html>
